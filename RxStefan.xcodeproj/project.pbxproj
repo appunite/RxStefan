@@ -10,6 +10,16 @@
 		AD6A581E2063B30F00F3EF0E /* RxStefan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58142063B30F00F3EF0E /* RxStefan.framework */; };
 		AD6A58232063B30F00F3EF0E /* RxStefanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A58222063B30F00F3EF0E /* RxStefanTests.swift */; };
 		AD6A58252063B30F00F3EF0E /* RxStefan.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A58172063B30F00F3EF0E /* RxStefan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6A582F2063B86200F3EF0E /* StefanType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A582E2063B86200F3EF0E /* StefanType.swift */; };
+		AD6A58342063B8AC00F3EF0E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58312063B8AB00F3EF0E /* RxSwift.framework */; };
+		AD6A58352063B8AC00F3EF0E /* Stefan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */; };
+		AD6A58362063B8AC00F3EF0E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */; };
+		AD6A58382063B8C400F3EF0E /* Stefan+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A58372063B8C400F3EF0E /* Stefan+Rx.swift */; };
+		AD6A58392063B9B100F3EF0E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58312063B8AB00F3EF0E /* RxSwift.framework */; };
+		AD6A583A2063B9B100F3EF0E /* Stefan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */; };
+		AD6A583B2063BD9E00F3EF0E /* RxCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */; };
+		AD6A583C2063BD9E00F3EF0E /* RxSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = AD6A58312063B8AB00F3EF0E /* RxSwift.framework */; };
+		AD6A583D2063BD9E00F3EF0E /* Stefan_iOS.framework in Resources */ = {isa = PBXBuildFile; fileRef = AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,11 @@
 		AD6A581D2063B30F00F3EF0E /* RxStefanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxStefanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6A58222063B30F00F3EF0E /* RxStefanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxStefanTests.swift; sourceTree = "<group>"; };
 		AD6A58242063B30F00F3EF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6A582E2063B86200F3EF0E /* StefanType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StefanType.swift; sourceTree = "<group>"; };
+		AD6A58312063B8AB00F3EF0E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stefan_iOS.framework; path = Carthage/Build/iOS/Stefan_iOS.framework; sourceTree = "<group>"; };
+		AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		AD6A58372063B8C400F3EF0E /* Stefan+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stefan+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6A58342063B8AC00F3EF0E /* RxSwift.framework in Frameworks */,
+				AD6A58352063B8AC00F3EF0E /* Stefan_iOS.framework in Frameworks */,
+				AD6A58362063B8AC00F3EF0E /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6A58392063B9B100F3EF0E /* RxSwift.framework in Frameworks */,
+				AD6A583A2063B9B100F3EF0E /* Stefan_iOS.framework in Frameworks */,
 				AD6A581E2063B30F00F3EF0E /* RxStefan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +76,7 @@
 				AD6A58162063B30F00F3EF0E /* RxStefan */,
 				AD6A58212063B30F00F3EF0E /* RxStefanTests */,
 				AD6A58152063B30F00F3EF0E /* Products */,
+				AD6A58302063B8AB00F3EF0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +94,8 @@
 			children = (
 				AD6A58172063B30F00F3EF0E /* RxStefan.h */,
 				AD6A58182063B30F00F3EF0E /* Info.plist */,
+				AD6A582E2063B86200F3EF0E /* StefanType.swift */,
+				AD6A58372063B8C400F3EF0E /* Stefan+Rx.swift */,
 			);
 			path = RxStefan;
 			sourceTree = "<group>";
@@ -84,6 +107,16 @@
 				AD6A58242063B30F00F3EF0E /* Info.plist */,
 			);
 			path = RxStefanTests;
+			sourceTree = "<group>";
+		};
+		AD6A58302063B8AB00F3EF0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */,
+				AD6A58312063B8AB00F3EF0E /* RxSwift.framework */,
+				AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +181,12 @@
 				TargetAttributes = {
 					AD6A58132063B30F00F3EF0E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 					};
 					AD6A581C2063B30F00F3EF0E = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -179,6 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6A583B2063BD9E00F3EF0E /* RxCocoa.framework in Resources */,
+				AD6A583C2063BD9E00F3EF0E /* RxSwift.framework in Resources */,
+				AD6A583D2063BD9E00F3EF0E /* Stefan_iOS.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6A58382063B8C400F3EF0E /* Stefan+Rx.swift in Sources */,
+				AD6A582F2063B86200F3EF0E /* StefanType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +373,7 @@
 		AD6A58292063B30F00F3EF0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -341,13 +381,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxStefan/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppUnite.RxStefan;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -356,6 +402,7 @@
 		AD6A582A2063B30F00F3EF0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -363,8 +410,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxStefan/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppUnite.RxStefan;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -378,11 +430,18 @@
 		AD6A582C2063B30F00F3EF0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxStefanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppUnite.RxStefanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,11 +450,18 @@
 		AD6A582D2063B30F00F3EF0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxStefanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppUnite.RxStefanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

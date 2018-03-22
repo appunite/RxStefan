@@ -1,0 +1,11 @@
+# -----------
+# Base Stefan
+# -----------
+
+github "appunite/Stefan"
+
+# -----------
+# Reactive 
+# -----------
+
+github "ReactiveX/RxSwift"      
