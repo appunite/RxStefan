@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.authors = { 'Szymon Mrozek' => 'szymon.mrozek.sm@gmail.com' }
 
   s.platform     = :ios
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '10.0'
   s.dependency "Stefan"
   s.dependency "RxSwift"
   s.dependency "RxCocoa"
