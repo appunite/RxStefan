@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
   s.ios.deployment_target = '9.3'
-  s.dependency "Stefan", "~> 0.2"
-  s.dependency "RxSwift", "~> 4.1"
-  s.dependency "RxCocoa", "~> 4.1"
+  s.dependency "Stefan"
+  s.dependency "RxSwift"
+  s.dependency "RxCocoa"
 
   s.swift_version = "4.0"
 
