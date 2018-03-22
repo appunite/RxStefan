@@ -4,7 +4,7 @@
 
 # RxStefan
 
-This repo is only about **RxSwift** extensions for **Stefan** library. Please follow [Stefan repo](https://github.com/appunite/Stefan) for general **Stefan** issues.
+> This repo is only about **RxSwift** extensions for **Stefan** library. Please follow [Stefan repo](https://github.com/appunite/Stefan) for general **Stefan** issues.
 
 ## Example usage 
 
@@ -21,7 +21,7 @@ You can also observe states changing
 
 ```swift
 stefan.rx.stateObservable
-    .subscribe(onNext: { [weak self] (state) in
+	.subscribe(onNext: { [weak self] (state) in
 
     	// most recent state 
     	...
