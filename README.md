@@ -9,10 +9,10 @@
 ## Example usage 
 
 ```swift
-dataSignal                        
-    .mapToLoadableState()        // signal of some collection, i.e. Observable<Response<[Fruit]>>
-    .bind(to: stefan.rx.loader)  // your mapping function that transforms response into ItemsLoadableState
-    .disposed(by: disposeBag)    // binding extension from this library
+dataSignal                       // signal of some collection, i.e. Observable<Response<[Fruit]>>
+    .mapToLoadableState()        // your mapping function that transforms response into ItemsLoadableState
+    .bind(to: stefan.rx.loader)  // binding extension from this library
+    .disposed(by: disposeBag)    
 ```
 
 And that's that! So simple to bind your response of items into stefan :) 
@@ -37,7 +37,7 @@ Add the following entry in your Cartfile:
 github "appunite/RxStefan"
 ```
 
-> There is no need to have `github "appunite/RxStefan"` in Cartfile.
+> There is no need to have `github "appunite/Stefan"` in Cartfile.
 
 Then run `carthage update`.
 
