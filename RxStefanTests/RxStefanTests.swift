@@ -134,5 +134,39 @@ class RxStefanTests: XCTestCase {
         
         wait(for: [loadingExpectation, firstLoadedExpectation, secondLoadedExpectation], timeout: 1.0)
     }
+    
+    
+    func testMultipleSubscriptions() {
+        
+        let subscriptionAExpectation = expectation(description: "Expectation that subscriber A will receive values")
+        let subscriptionBExpectation = expectation(description: "Expectation that subscriber B will receive values")
+        
+        // Subscription A
+        sut.rx.stateObservable
+            .subscribe(onNext: { newState in
+                switch newState {
+                case .loading:
+                    subscriptionAExpectation.fulfill()
+                default:
+                    break
+                }
+            }).disposed(by: disposeBag)
+        
+        
+        // Subscription B
+        sut.rx.stateObservable
+            .subscribe(onNext: { newState in
+                switch newState {
+                case .loading:
+                    subscriptionBExpectation.fulfill()
+                default:
+                    break
+                }
+            }).disposed(by: disposeBag)
+        
+        sut.load(newState: .loading)
+
+        wait(for: [subscriptionAExpectation, subscriptionBExpectation], timeout: 1.0)
+    }
 }
 

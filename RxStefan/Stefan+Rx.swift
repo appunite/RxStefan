@@ -16,16 +16,7 @@ extension Reactive where Base: StefanType, Base: NSObject {
     /// Stefan.state via reactive signal
     
     public var stateObservable: Observable<ItemsLoadableState<Base.ItemType>> {
-        
-        return Observable.create({ observer in
-            
-            self.base.didChangeState = { newState in
-                observer.onNext(newState)
-            }
-            
-            return Disposables.create()
-            
-        }).share(replay: 1, scope: .whileConnected)
+        return base.didChangeStateObservable
     }
     
     /// Bindable sink for `load(newState ...)` function.
@@ -49,3 +40,39 @@ extension Reactive where Base: StefanType, Base: NSObject {
         }
     }
 }
+
+
+fileprivate struct StefanAssociatedKeys {
+    static var didChangeStateObservable: UInt8 = 0
+}
+
+extension StefanType {
+    
+    // Simulate behavior of a lazy var
+    
+    fileprivate var didChangeStateObservable: Observable<ItemsLoadableState<ItemType>> {
+        get {
+            guard let value = objc_getAssociatedObject(self, &StefanAssociatedKeys.didChangeStateObservable) as? Observable<ItemsLoadableState<ItemType>> else {
+                
+                let observable = createDidChangeStateObservable()
+                objc_setAssociatedObject(self, &StefanAssociatedKeys.didChangeStateObservable, observable, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                return observable
+            }
+            
+            return value
+        }
+    }
+    
+    private func createDidChangeStateObservable() -> Observable<ItemsLoadableState<ItemType>> {
+        return Observable.create({ observer in
+            
+            self.didChangeState = { newState in
+                observer.onNext(newState)
+            }
+            
+            return Disposables.create()
+            
+        }).share(replay: 1, scope: .whileConnected)
+    }
+}
+
