@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RxStefan"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "RxStefan - reactive extensions for Stefan."
 
   s.homepage     = "https://github.com/appunite/RxStefan"
