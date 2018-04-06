@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RxStefan"
-  s.version      = "0.2.1"
+  s.version      = "0.2.2"
   s.summary      = "RxStefan - reactive extensions for Stefan."
 
   s.homepage     = "https://github.com/appunite/RxStefan"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.dependency "RxSwift"
   s.dependency "RxCocoa"
 
-  s.swift_version = "4.0"
+  s.swift_version = "4.1"
 
   s.source       = { :git => "https://github.com/appunite/RxStefan.git", :tag => "#{s.version}" }
   s.source_files  = "RxStefan/*.swift"
