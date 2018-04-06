@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Stefan_iOS
+import Stefan
 
 public protocol StefanType: class {
     

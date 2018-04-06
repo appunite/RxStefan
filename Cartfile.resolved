@@ -1,3 +1,3 @@
 github "ReactiveX/RxSwift" "4.1.2"
-github "appunite/Stefan" "0.2.1"
-github "tonyarnold/Differ" "1.0.3"
+github "appunite/Stefan" "0.2.2"
+github "tonyarnold/Differ" "1.2.0"

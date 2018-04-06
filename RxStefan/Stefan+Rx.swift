@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import Stefan_iOS
+import Stefan
 
 extension Reactive where Base: StefanType, Base: NSObject {
     

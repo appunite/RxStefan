@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Stefan_iOS
+import Stefan
 import RxSwift
 @testable import RxStefan
 
@@ -169,4 +169,3 @@ class RxStefanTests: XCTestCase {
         wait(for: [subscriptionAExpectation, subscriptionBExpectation], timeout: 1.0)
     }
 }
-

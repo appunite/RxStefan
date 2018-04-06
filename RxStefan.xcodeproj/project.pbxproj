@@ -12,14 +12,15 @@
 		AD6A58252063B30F00F3EF0E /* RxStefan.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A58172063B30F00F3EF0E /* RxStefan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6A582F2063B86200F3EF0E /* StefanType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A582E2063B86200F3EF0E /* StefanType.swift */; };
 		AD6A58342063B8AC00F3EF0E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58312063B8AB00F3EF0E /* RxSwift.framework */; };
-		AD6A58352063B8AC00F3EF0E /* Stefan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */; };
 		AD6A58362063B8AC00F3EF0E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */; };
 		AD6A58382063B8C400F3EF0E /* Stefan+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A58372063B8C400F3EF0E /* Stefan+Rx.swift */; };
 		AD6A58392063B9B100F3EF0E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58312063B8AB00F3EF0E /* RxSwift.framework */; };
-		AD6A583A2063B9B100F3EF0E /* Stefan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */; };
 		AD6A58402063F05500F3EF0E /* RxCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */; };
 		AD6A58412063F05500F3EF0E /* RxSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = AD6A58312063B8AB00F3EF0E /* RxSwift.framework */; };
-		AD6A58422063F05500F3EF0E /* Stefan_iOS.framework in Resources */ = {isa = PBXBuildFile; fileRef = AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */; };
+		ADE50AA52077BAF600E4660C /* Stefan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE50AA42077BAF500E4660C /* Stefan.framework */; };
+		ADE50AA62077BC5F00E4660C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */; };
+		ADE50AA72077BC6900E4660C /* RxStefan.framework in Resources */ = {isa = PBXBuildFile; fileRef = AD6A58142063B30F00F3EF0E /* RxStefan.framework */; };
+		ADE50AA82077BC6D00E4660C /* Stefan.framework in Resources */ = {isa = PBXBuildFile; fileRef = ADE50AA42077BAF500E4660C /* Stefan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +42,9 @@
 		AD6A58242063B30F00F3EF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6A582E2063B86200F3EF0E /* StefanType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StefanType.swift; sourceTree = "<group>"; };
 		AD6A58312063B8AB00F3EF0E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stefan_iOS.framework; path = Carthage/Build/iOS/Stefan_iOS.framework; sourceTree = "<group>"; };
 		AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		AD6A58372063B8C400F3EF0E /* Stefan+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stefan+Rx.swift"; sourceTree = "<group>"; };
+		ADE50AA42077BAF500E4660C /* Stefan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stefan.framework; path = Carthage/Build/iOS/Stefan.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE50AA52077BAF600E4660C /* Stefan.framework in Frameworks */,
 				AD6A58342063B8AC00F3EF0E /* RxSwift.framework in Frameworks */,
-				AD6A58352063B8AC00F3EF0E /* Stefan_iOS.framework in Frameworks */,
 				AD6A58362063B8AC00F3EF0E /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE50AA62077BC5F00E4660C /* RxCocoa.framework in Frameworks */,
 				AD6A58392063B9B100F3EF0E /* RxSwift.framework in Frameworks */,
-				AD6A583A2063B9B100F3EF0E /* Stefan_iOS.framework in Frameworks */,
 				AD6A581E2063B30F00F3EF0E /* RxStefan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,9 +113,9 @@
 		AD6A58302063B8AB00F3EF0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADE50AA42077BAF500E4660C /* Stefan.framework */,
 				AD6A58332063B8AB00F3EF0E /* RxCocoa.framework */,
 				AD6A58312063B8AB00F3EF0E /* RxSwift.framework */,
-				AD6A58322063B8AB00F3EF0E /* Stefan_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = AppUnite;
 				TargetAttributes = {
 					AD6A58132063B30F00F3EF0E = {
@@ -220,9 +221,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE50AA82077BC6D00E4660C /* Stefan.framework in Resources */,
+				ADE50AA72077BC6900E4660C /* RxStefan.framework in Resources */,
 				AD6A58402063F05500F3EF0E /* RxCocoa.framework in Resources */,
 				AD6A58412063F05500F3EF0E /* RxSwift.framework in Resources */,
-				AD6A58422063F05500F3EF0E /* Stefan_iOS.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +273,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -278,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -331,6 +335,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -338,6 +343,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
