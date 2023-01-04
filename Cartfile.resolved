@@ -1,3 +1,3 @@
-github "ReactiveX/RxSwift" "6.2.0"
-github "appunite/Stefan" "c3b9f17b205cf66b939d3a48edf4267b527b051b"
-github "appunite/Differ" "5830e0c30dbd81bf6c07b70264a312351e403eee"
+github "ReactiveX/RxSwift" "6.5.0"
+github "appunite/Differ" "1.4.6"
+github "appunite/Stefan" "0.4.0"
