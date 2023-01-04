@@ -2,7 +2,7 @@
 # Base Stefan
 # -----------
 
-github "appunite/Stefan"
+github "appunite/Stefan" "Xcode12-support"
 
 # -----------
 # Reactive 
