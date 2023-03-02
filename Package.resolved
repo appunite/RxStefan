@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "differ",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tonyarnold/Differ",
+      "state" : {
+        "revision" : "5520fda947f1f9777a806389c2ba587219bc0538",
+        "version" : "1.4.6"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "stefan",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/appunite/Stefan",
+      "state" : {
+        "branch" : "spm",
+        "revision" : "e5a461ac678f2186d79aa603549d4851114fc55e"
+      }
+    }
+  ],
+  "version" : 2
+}

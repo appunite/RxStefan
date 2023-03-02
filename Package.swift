@@ -16,8 +16,8 @@ let package = Package(
             exact: "6.5.0"
         ),
         .package(
-            url: "https://github.com/appunite/Stefan",
-            exact: "0.4.0"
+            url: "https://github.com/appunite/Stefan.git",
+            branch: "spm"
         )
     ],
     targets: [
@@ -31,11 +31,16 @@ let package = Package(
                 .product(
                     name: "RxCocoa",
                     package: "RxSwift"
+                ),
+                .product(
+                    name: "Stefan",
+                    package: "Stefan"
                 )
             ]
         ),
         .testTarget(
             name: "RxStefanTests",
-            dependencies: ["RxStefan"]),
+            dependencies: ["RxStefan"]
+        )
     ]
 )
