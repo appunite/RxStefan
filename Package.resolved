@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/appunite/Stefan",
       "state" : {
-        "branch" : "chore/spm-support",
-        "revision" : "1725ecd9b28876dbb33697a9ec957a5c7a5cf47a"
+        "branch" : "master",
+        "revision" : "61cae818efba2c23e94f544ac2c289d35becae78"
       }
     }
   ],
