@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "differ",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/appunite/Differ",
+      "state" : {
+        "revision" : "747d0cce14e8c4e4c52f9267c909d3845494822b",
+        "version" : "1.4.6"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "stefan",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/appunite/Stefan",
+      "state" : {
+        "branch" : "chore/spm-support",
+        "revision" : "1725ecd9b28876dbb33697a9ec957a5c7a5cf47a"
+      }
+    }
+  ],
+  "version" : 2
+}
