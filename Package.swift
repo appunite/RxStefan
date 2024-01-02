@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/appunite/Stefan",
-            branch: "chore/spm-support"
+            branch: "master"
         ),
         .package(
             url: "https://github.com/ReactiveX/RxSwift",
