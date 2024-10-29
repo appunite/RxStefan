@@ -14,11 +14,11 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/appunite/Stefan",
-            branch: "master"
+            from: "0.4.1"
         ),
         .package(
             url: "https://github.com/ReactiveX/RxSwift",
-            exact: "6.5.0"
+            from: "6.8.0"
         )
     ],
     targets: [
